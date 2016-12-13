@@ -1,0 +1,553 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700);
+
+/* Reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Body & Main
+================================================== */
+body {
+    background: #ddd;
+    nowhitespace: afterproperty;
+    font: 14px/1.8 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body a {
+    color: #e73420;
+}
+body a:hover {
+    text-decoration: none;
+    color: #e73420;
+}
+
+/*set max img width*/
+img {
+    max-width: 100%;
+}
+
+/* Main Wraps
+================================================== */
+
+/*main*/
+div.page {
+    width: 960px;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#main-content {
+    margin: 30px 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+}
+
+#content {
+    float: left;
+    width: 590px;
+}
+
+body.no-sidebars #content {
+    width: 100%;
+}
+
+#sidebar {
+    float: right;
+    width: 250px;
+    font-size: 0.929em;
+}
+
+/* Commons
+================================================== */
+
+/*clear floats*/
+.remove-margin {
+    margin-right: 0 !important;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/*blockquote*/
+blockquote {
+    position: relative;
+    margin: 30px 20px;
+    padding-left: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #000;
+    content: open-quote;
+    font-size: 3em;
+    line-height: .1em;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+blockquote p:last-child {
+    margin: 0;
+}
+
+
+/*preformatted text*/
+pre {
+    background: #fff url("images/pre-bg.png") repeat;
+    margin: 40px 0px;
+    padding: 25px 20px;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+ul, ol {
+    margin: 0 0 1em 1.5em;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+ol ol {
+    list-style: upper-alpha;
+}
+ol ol ol {
+    list-style: lower-roman;
+}
+ol ol ol ol {
+    list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-bottom: 0;
+}
+
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+    border:1px solid #ddd;
+    border-right:none;
+    background:#fff;
+}
+
+th {
+    font-weight: bold;
+    padding:10px 10px;
+    background:#555;
+    color:#fff;
+}
+
+tr{
+    padding:5px 5px;
+}
+
+td{
+    padding:5px 10px;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+
+/* Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: 'Open Sans', Helvetica, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #000;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #e73420;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.714em;
+    margin: 0 0 20px;
+}
+
+h2 {
+    font-size: 1.286em;
+}
+
+h3 {
+    font-size: 1.286em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.857em;
+}
+
+h6 {
+    font-size: 0.714em;
+}
+
+#main-content {
+    font-size: 1em;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+p img {
+    margin: 0;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+hr {
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 10px 0 30px;
+    height: 0;
+}
+
+p a, p a:visited {
+    line-height: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a {
+    outline: 0;
+}
+
+p a, p a:visited {
+    line-height: inherit;
+}
+
+a:focus {
+    outline: 0;
+}
+
+/* Header
+================================================== */
+
+/*pre-header*/
+#pre-header { margin: 20px 0 15px; }
+#header-social{
+    float: right;
+    margin: 0;
+}
+#header-social li {
+    float: left;
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#header-social a,
+#header-social img {
+    display: block;
+}
+
+#header-social img:hover {
+    opacity: 0.6;
+}
+
+
+/*header*/
+#header {
+    position: relative;
+    background: #111 url("images/vintage.png");
+    margin-bottom: 30px;
+}
+
+#site-logo {
+    float: left;
+    padding: 25px 0 0 0;
+}
+
+/*logo*/
+#logo h1 a, #logo h2 a {
+    display: block;
+    float: left;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #fff;
+    padding: 40px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#logo img {
+    display: block;
+    max-width: 100%;
+}
+
+#logo h1, #logo h2 {
+    font-size: 2.286em;
+    line-height: 1em;
+    margin: 0;
+}
+
+/* Main Navigation
+================================================== */
+
+/*hide responsive nav*/
+#top-bar .selector,
+#navigation .selector {
+    display: none;
+}
+
+/*core*/
+#main-menu > ul, #main-menu > ul * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main-menu > ul {
+    line-height: 1.0;
+}
+
+#main-menu > ul ul {
+    position: absolute;
+    top: -999em;
+    width: 180px;
+}
+
+#main-menu > ul ul li {
+    width: 100%;
+}
+
+#main-menu > ul li:hover {
+    visibility: inherit;
+}
+
+#main-menu > ul li {
+    float: left;
+    position: relative;
+}
+
+#main-menu > ul a {
+    display: block;
+    position: relative;
+}
+
+#main-menu > ul li:hover ul, #main-menu > ul li.sfHover ul {
+    left: 0px;
+    top: 30px;
+    z-index: 99;
+}
+
+#main-menu > ul li:hover li ul, #main-menu > ul li.sfHover li ul {
+    top: -999em;
+}
+
+#main-menu > ul li li:hover ul, #main-menu > ul li li.sfHover ul {
+    left: 180px;
+    top: 1px;
+}
+
+/*styling*/
+#navigation {
+    position: absolute;
+    height: 50px;
+    top: 50%;
+    right: 15px;
+    margin-top: -16px;
+}
+
+#navigation #main-menu > ul > li:hover > ul, #main-menu > ul li.sfHover > ul {
+    top: 32px;
+}
+
+#navigation #main-menu > ul li li:hover ul, #main-menu > ul li li.sfHover ul,
+#main-menu > ul li li:hover ul, #main-menu > ul li li.sfHover ul {
+    left: 200px;
+    top: -10px;
+}
+
+#navigation #main-menu > ul a {
+    font-size: 1em;
+    height: 32px;
+    line-height: 32px;
+    color: #aaa;
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#navigation #main-menu > ul > li > a {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+#navigation #main-menu > ul li {
+    float: left;
+    position: relative;
+}
+
+#navigation #main-menu > ul > li > a:hover {
+    color: #fff;
+}
+
+#navigation #main-menu > ul > li > a.active {
+    background: #e73420;
+    color: #fff;
+    font-weight: bold;
+}
+
+#navigation #main-menu > ul > li.sfHover > a,
+#navigation a.active,
+#navigation a.active:hover,
+#navigation #main-menu > ul > li > a.active-trail {
+    color: #fff;
+}
+
+/*drop-down styles*/
+#navigation #main-menu > ul ul {
+    position: absolute;
+    nowhitespace: afterproperty;
+    top: -999em;
+    width: 200px;
+    z-index: 9999;
+    left: 0;
+    padding-top: 10px;
+    border-radius: 2px;
+}
+
+#navigation #main-menu > ul ul > li:first-child{
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+#navigation #main-menu > ul ul > li:last-child{
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+#navigation #main-menu > ul ul li {
+    background: #e73420;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#navigation #main-menu > ul ul li:first-child {
+    border-top: 0;
+}
+
+#navigation #main-menu > ul ul li:last-child {
+    border-bottom: 0;
+}
+
+#navigation #main-menu > ul ul a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    height: auto;
+    margin: 0px;
+    border: 0px;
+    font-size: 0.929em;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+#navigation #main-menu > ul ul li > a:hover {
+    background-color: #bf2615;
+}
+
+/*
+  Custom
+*/
+.col-sidebar {
+    background: #f8f8f8;
+}
