@@ -14,7 +14,7 @@ $this->inc('elements/header.php');
         $a->display($c);
         ?>
     </div>
-    <div class="col-sm-offset-1 col-sm-3 col-sidebar">
+    <div class="col-sm-4 col-sidebar">
         <?php
         $a = new GlobalArea('Sidebar');
         $a->display($c);
