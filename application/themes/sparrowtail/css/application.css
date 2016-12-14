@@ -146,16 +146,13 @@ blockquote p:last-child {
 
 /*preformatted text*/
 pre {
-    background: #fff url("images/pre-bg.png") repeat;
+    background: #fff;
     margin: 40px 0px;
     padding: 25px 20px;
-    line-height: 25px;
+    line-height: 1em;
     border: 1px solid #ddd;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+    font-family: "Courier New";
+    overflow-x: auto;
 }
 
 ul, ol {
@@ -335,7 +332,7 @@ a:focus {
 /*header*/
 #header {
     position: relative;
-    background: #111 url("images/vintage.png");
+    background: #111 url("../images/vintage.png");
     margin-bottom: 30px;
 }
 
@@ -608,4 +605,83 @@ li.tag a {
     border-radius: 4px;
     text-shadow: 1px 1px #fff;
     font-weight: normal;
+}
+
+@media only screen and (max-width: 959px) {
+    div.page {
+        width: 690px;
+    }
+
+    ul.nav {
+        display: none;
+    }
+
+    #logo {
+        height: 134px;
+    }
+
+    .col-sidebar {
+        border-left: none;
+    }
+
+    #navigation {
+        height: 70px;
+        width: 100%;
+        position: inherit;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-top: 0;
+        background: #e73420 url(../images/responsive-nav.png) right center no-repeat;
+    }
+
+    #navigation .selector {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        height: 50px;
+        width: 100%;
+        vertical-align: middle;
+        color: #fff;
+        font-weight: bold;
+        line-height: 70px;
+        text-indent: 40px;
+    }
+
+    #navigation .selector select {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 70px;
+        background: none;
+        width: 100%;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: #666 !important;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #logo {
+        height: 244px;
+    }
+
+    div.page {
+        width: 370px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .col-content {
+        width: 100%;
+    }
+
+    .col-sidebar {
+        width: 100%;
+    }
 }

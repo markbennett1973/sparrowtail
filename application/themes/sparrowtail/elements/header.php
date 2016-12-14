@@ -22,12 +22,10 @@ $this->inc('elements/header_top.php');
         </h1>
     </div>
     <nav id="navigation" role="navigation">
-        <div id="main-menu">
-            <?php
-            $a = new GlobalArea('Header Navigation');
-            $a->display();
-            ?>
-        </div>
+        <?php
+        $a = new GlobalArea('Header Navigation');
+        $a->display();
+        ?>
     </nav>
 </header>
 

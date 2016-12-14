@@ -3,8 +3,9 @@
 <html lang="<?php echo Localization::activeLanguage() ?>">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/application.css">
+    <link rel="shortcut icon" href="<?php echo $view->getThemePath(); ?>/images/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath(); ?>/css/bootstrap-modified.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath(); ?>/css/application.css">
     <?php
     View::element('header_required', [
         'pageTitle' => isset($pageTitle) ? $pageTitle : '',
