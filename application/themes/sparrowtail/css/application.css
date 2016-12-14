@@ -473,18 +473,19 @@ a:focus {
 
 #navigation #main-menu > ul > li > a:hover {
     color: #fff;
+    background: none;
 }
 
-#navigation #main-menu > ul > li > a.active {
+#navigation #main-menu > ul > li > a.nav-selected {
     background: #e73420;
     color: #fff;
     font-weight: bold;
 }
 
 #navigation #main-menu > ul > li.sfHover > a,
-#navigation a.active,
-#navigation a.active:hover,
-#navigation #main-menu > ul > li > a.active-trail {
+#navigation a.nav-selected,
+#navigation a.nav-selected:hover,
+#navigation #main-menu > ul > li > a.nav-path-selected {
     color: #fff;
 }
 
@@ -580,4 +581,31 @@ footer {
     margin: 15px 0;
     text-align: center;
     font-size: 0.786em;
+}
+
+#breadcrumb {
+    font-size: 11px;
+}
+
+.recent-posts a {
+    color: #666;
+}
+
+ul.tags {
+    margin-left: 0
+}
+
+li.tag {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+li.tag a {
+    background-color: #E7E5E3;
+    color: #100100;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-shadow: 1px 1px #fff;
+    font-weight: normal;
 }

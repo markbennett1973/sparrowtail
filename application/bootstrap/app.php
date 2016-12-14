@@ -63,3 +63,6 @@
  *
  * ----------------------------------------------------------------------------
  */
+$classLoader = new \Symfony\Component\ClassLoader\Psr4ClassLoader();
+$classLoader->addPrefix('Application\\Helpers', DIR_APPLICATION . '/helpers');
+$classLoader->register();
