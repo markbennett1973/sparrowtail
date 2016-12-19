@@ -66,3 +66,11 @@
 $classLoader = new \Symfony\Component\ClassLoader\Psr4ClassLoader();
 $classLoader->addPrefix('Application\\Helpers', DIR_APPLICATION . '/helpers');
 $classLoader->register();
+
+\Route::register('/tools/migrate', function () {
+    if (!(new User())->isSuperUser()) {
+        throw new \Exception(t('Access Denied'), \Concrete\Core\Http\Response::HTTP_FORBIDDEN);
+    }
+
+    include(__DIR__ . '/../tools/migrate.php');
+});

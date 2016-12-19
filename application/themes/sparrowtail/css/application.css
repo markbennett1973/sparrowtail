@@ -65,6 +65,15 @@ main {
     background: #fff;
 }
 
+#site-slogan {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.857em;
+}
+
 /* Main Wraps
 ================================================== */
 
@@ -546,6 +555,24 @@ a:focus {
 /*
   Custom
 */
+h2.title {
+    font-size: 1.5em;
+}
+
+.home-page-list .ccm-block-page-list-title {
+    margin-bottom: 10px;
+}
+
+.home-page-list .ccm-block-page-list-date {
+    margin-bottom: 10px;
+}
+
+.home-page-list .ccm-block-page-list-page-entry {
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #cccccc;
+    margin-bottom: 30px;
+}
+
 .col-sidebar {
     background: #f8f8f8;
     padding: 30px;
