@@ -27,7 +27,7 @@ use Application\Helpers\NavHelper;
     <?php if (count($results)): ?>
         <?php foreach($results as $result): ?>
             <div class="search-result">
-            <h2 class="title"><a href="<?php // echo $result->getCollectionPath(); ?>"><?php echo $result->getCollectionName(); ?></a></h2>
+            <h2 class="title"><a href="<?php echo $result->getCollectionPath(); ?>"><?php echo $result->getCollectionName(); ?></a></h2>
                 <div class="ccm-block-page-list-date">
                     <strong>Posted on: <?php echo  date('d F Y', strtotime($result->getCollectionDatePublic())); ?></strong>
                 </div>
@@ -40,7 +40,7 @@ use Application\Helpers\NavHelper;
                 <br/><?php echo NavHelper::getTags($result); ?>
 
                 <div class="ccm-block-page-list-page-entry-read-more">
-                    <a href="<?php echo $url?>" target="<?php echo $target?>" class="<?php echo $buttonClasses?>">Read More</a>
+                    <a href="<?php echo $result->getCollectionPath(); ?>">Read More</a>
                 </div>
             </div>
         <?php endforeach; ?>

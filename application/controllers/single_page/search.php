@@ -48,7 +48,7 @@ class Search extends PageController
             $options = $controller->getOptions();
 
             foreach ($options as $option) {
-                $tags[] = $option;
+                $tags[] = (string) $option;
             }
         }
 
