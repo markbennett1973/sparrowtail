@@ -559,7 +559,7 @@ h2.title {
     font-size: 1.5em;
 }
 
-.home-page-list .ccm-block-page-list-title {
+.home-page-list .ccm-block-page-list-title, .search-result h2 {
     margin-bottom: 10px;
 }
 
@@ -567,7 +567,7 @@ h2.title {
     margin-bottom: 10px;
 }
 
-.home-page-list .ccm-block-page-list-page-entry {
+.home-page-list .ccm-block-page-list-page-entry, .search-result {
     padding-bottom: 30px;
     border-bottom: 1px dotted #cccccc;
     margin-bottom: 30px;
@@ -632,6 +632,22 @@ li.tag a {
     border-radius: 4px;
     text-shadow: 1px 1px #fff;
     font-weight: normal;
+}
+
+/* Search page
+================================================== */
+.search-form {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+.search-form label, .search-form input, .search-form select {
+    margin-right: 20px;
+}
+
+.search-field {
+    display: inline;
 }
 
 @media only screen and (max-width: 959px) {
@@ -710,5 +726,18 @@ li.tag a {
 
     .col-sidebar {
         width: 100%;
+    }
+
+    .search-form label {
+        width: 40px;
+    }
+
+    .search-submit {
+        margin-left: 60px;
+    }
+
+    .search-field {
+        display: block;
+        margin-bottom: 15px;
     }
 }
